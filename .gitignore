@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+ACESSOS-DA-VM.txt
+*.ova
+*.vdi
+*.vmdk
+*.zip
+*.pcap
+*.pcapng

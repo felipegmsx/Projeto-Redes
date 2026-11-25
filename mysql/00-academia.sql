@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS academia
+    CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+
+CREATE TABLE IF NOT EXISTS academia.alunos (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    aluno VARCHAR(100) NOT NULL,
+    plano ENUM('Mensal', 'Trimestral', 'Anual') NOT NULL,
+    criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
